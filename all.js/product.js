@@ -22,7 +22,7 @@ createApp({
             /(?:(?:^|.*;\s*)vuetoken\s*\=\s*([^;]*).*$)|^.*$/,"$1",);
         axios.defaults.headers.common.Authorization = myCookie
         if (!myCookie) {
-            window.location.href = 'https://austin0929.github.io/vue-second-week/index.html';
+            window.location.href = 'https://austin0929.github.io/vue-second-week/';
         }
         console.log(myCookie);
         axios.post(api, {}).then((res) => {
